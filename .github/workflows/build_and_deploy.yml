@@ -28,7 +28,7 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: Deploy Snowpark apps
-        working-diretory: first_snowpark_project
+        working-directory: first_snowpark_project
         env:
           SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
           SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
